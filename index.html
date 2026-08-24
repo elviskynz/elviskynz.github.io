@@ -3,110 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Elvis Kinyanjui — ISP Technician and Networking Enthusiast.">
-  <title>Elvis Kinyanjui | ISP Technician</title>
+  <meta name="description" content="Elvis Kinyanjui — Fiber, ISP and networking technician portfolio.">
+  <title>Elvis Kinyanjui | Fiber & ISP Technician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Pure-CSS networking background: no external background image required. -->
+  <div class="network-bg" aria-hidden="true">
+    <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+    <span class="node n4"></span><span class="node n5"></span><span class="node n6"></span>
+    <span class="node n7"></span><span class="node n8"></span>
+    <i class="line l1"></i><i class="line l2"></i><i class="line l3"></i>
+    <i class="line l4"></i><i class="line l5"></i><i class="line l6"></i>
+  </div>
+
   <header class="nav">
-    <a class="logo" href="#home">EK<span>.</span></a>
+    <a class="brand" href="#home"><span>EK</span> NETWORKS</a>
+    <button class="menu" aria-label="Open menu">☰</button>
     <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <a href="#work">Field Work</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">ISP TECHNICIAN • NETWORKING • TELECOMMUNICATIONS</p>
-        <h1>Elvis<br><span>Kinyanjui.</span></h1>
-        <p class="intro">
-          Self-driven, disciplined and eager to learn. I’m passionate about
-          networking, ISP infrastructure and building reliable connectivity solutions.
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="status"><span></span> FIBER • ISP • NETWORKING</div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Elvis<br><strong>Kinyanjui</strong></h1>
+        <p class="lead">
+          A self-driven, disciplined and eager-to-learn technician passionate about
+          fiber networks, ISP infrastructure and keeping people connected.
         </p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">View My Work</a>
-          <a class="btn" href="#contact">Get In Touch</a>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">View My Work ↗</a>
+          <a class="btn ghost" href="mailto:mwauraelvis54@gmail.com">Contact Me</a>
+        </div>
+        <div class="tech-strip">
+          <span>FTTH</span><span>GPON/XPON</span><span>OLT</span><span>PPPoE</span><span>MIKROTIK</span>
         </div>
       </div>
-      <div class="network-card">
-        <div class="status"><span></span> NETWORK ONLINE</div>
-        <div class="terminal">
-          <p><b>elvis@network:~$</b> whoami</p>
-          <p class="muted">ISP Technician & Networking Enthusiast</p>
-          <p><b>elvis@network:~$</b> skills --list</p>
-          <p class="accent">MikroTik • PPPoE • OLT • GPON/EPON • Fiber</p>
-          <p><b>elvis@network:~$</b> <span class="cursor">_</span></p>
+
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/field-tower.jpg" alt="Elvis Kinyanjui working at a telecom tower">
+          <div class="photo-tag">FIELD TECHNICIAN<br><small>ON SITE</small></div>
+        </div>
+        <div class="signal-card">
+          <span class="pulse"></span>
+          <div><small>NETWORK STATUS</small><b>ONLINE</b></div>
+          <strong>∞</strong>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="section-label">01 / ABOUT</div>
+    <section id="about" class="section about">
+      <div class="section-head">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Built around <span>connectivity.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p class="big-copy">
+            I enjoy working where physical infrastructure meets networking —
+            from fiber installation and splicing to OLTs, customer access networks
+            and MikroTik-based ISP environments.
+          </p>
+          <p>
+            My approach is simple: learn continuously, troubleshoot methodically,
+            work safely and leave a network better than I found it.
+          </p>
+        </div>
+        <div class="spec-card">
+          <div><span>01</span><b>Fiber</b><small>FTTH / splicing / closures</small></div>
+          <div><span>02</span><b>Access</b><small>OLT / ONT / GPON / XPON</small></div>
+          <div><span>03</span><b>Routing</b><small>MikroTik / PPPoE / ISP</small></div>
+          <div><span>04</span><b>Field</b><small>Installation / fault finding</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-head">
+        <p class="eyebrow">02 / TECHNICAL FOCUS</p>
+        <h2>Tools of the <span>trade.</span></h2>
+      </div>
+      <div class="skill-grid">
+        <article><div class="icon">⌁</div><h3>Fiber Optics</h3><p>Fiber routing, closures, splicing and FTTH deployment work.</p></article>
+        <article><div class="icon">◈</div><h3>OLT / ONT</h3><p>Access-network equipment, optical distribution and customer-side connectivity.</p></article>
+        <article><div class="icon">⌘</div><h3>MikroTik</h3><p>Routing, PPPoE, bandwidth management, uplinks and ISP network operations.</p></article>
+        <article><div class="icon">↯</div><h3>Fault Finding</h3><p>Tracing physical and logical faults and restoring reliable connectivity.</p></article>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-head">
+        <p class="eyebrow">03 / FIELD WORK</p>
+        <h2>Out in the <span>network.</span></h2>
+        <p>Real field and network-infrastructure moments from my work.</p>
+      </div>
+
+      <div class="gallery">
+        <button class="work-card large" data-full="assets/field-tower.jpg" data-title="Telecom tower field work">
+          <img src="assets/field-tower.jpg" alt="Telecom tower field work">
+          <span><b>01</b> Tower / Field Work</span>
+        </button>
+        <button class="work-card" data-full="assets/fiber-fieldwork.jpg" data-title="Fiber field installation">
+          <img src="assets/fiber-fieldwork.jpg" alt="Fiber technician working in the field">
+          <span><b>02</b> Fiber Installation</span>
+        </button>
+        <button class="work-card" data-full="assets/fiber-closure.jpg" data-title="Fiber distribution closure">
+          <img src="assets/fiber-closure.jpg" alt="Fiber distribution closure with organized fibers">
+          <span><b>03</b> Fiber Closure</span>
+        </button>
+        <button class="work-card wide" data-full="assets/network-rack.jpg" data-title="Network rack and fiber equipment">
+          <img src="assets/network-rack.jpg" alt="Network rack with fiber equipment">
+          <span><b>04</b> Network Rack / OLT Environment</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section quote">
+      <div class="quote-mark">“</div>
+      <p>Reliable internet starts with reliable infrastructure.</p>
+      <span>— Elvis Kinyanjui</span>
+    </section>
+
+    <section id="contact" class="section contact">
       <div>
-        <h2>Built around curiosity,<br><span>discipline & technology.</span></h2>
-        <p class="large">
-          I’m Elvis Kinyanjui, an enthusiastic ISP technician with a strong interest
-          in computer networking and telecommunications. I enjoy troubleshooting
-          real-world network problems, learning new technologies and working with
-          infrastructure that keeps people connected.
-        </p>
-        <p>
-          My approach is simple: keep learning, understand how things work, and
-          build solutions that are practical, stable and scalable.
-        </p>
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Let's build something<br><span>connected.</span></h2>
       </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="section-label">02 / SKILLS</div>
-      <div class="skills-grid">
-        <article><b>01</b><h3>MikroTik</h3><p>Routing, bandwidth management, PPPoE, Hotspot and network troubleshooting.</p></article>
-        <article><b>02</b><h3>Fiber Networks</h3><p>Fiber distribution, optical power awareness and subscriber connectivity.</p></article>
-        <article><b>03</b><h3>OLT / ONU</h3><p>Working with GPON, EPON and XPON access infrastructure and customer ONUs.</p></article>
-        <article><b>04</b><h3>ISP Operations</h3><p>Subscriber management, network monitoring and practical ISP infrastructure.</p></article>
+      <div class="contact-box">
+        <a href="mailto:mwauraelvis54@gmail.com">mwauraelvis54@gmail.com</a>
+        <a href="tel:+254758796040">+254 758 796 040</a>
+        <p>Fiber • ISP • Networking</p>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-label">03 / PROJECTS</div>
-      <div>
-        <h2>Things I work with.</h2>
-        <div class="projects">
-          <article class="project">
-            <span>NETWORKING</span>
-            <h3>ISP Subscriber Network</h3>
-            <p>PPPoE-based customer connectivity with centralized subscriber and bandwidth management.</p>
-          </article>
-          <article class="project">
-            <span>ROUTING</span>
-            <h3>MikroTik Infrastructure</h3>
-            <p>Routing, upstream connectivity, traffic management and troubleshooting for ISP networks.</p>
-          </article>
-          <article class="project">
-            <span>FIBER</span>
-            <h3>FTTH Access Network</h3>
-            <p>Fiber access infrastructure using OLTs, splitters and customer ONUs.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <p class="eyebrow">04 / CONTACT</p>
-      <h2>Let's connect.</h2>
-      <p>Interested in networking, technology or a project? Reach out.</p>
-      <a class="email" href="mailto:mwauraelvis54@gmail.com">mwauraelvis54@gmail.com</a>
-      <p class="phone"><a href="tel:+254758796040">+254 758 796 040</a></p>
     </section>
   </main>
 
   <footer>
     <span>© 2026 Elvis Kinyanjui</span>
-    <span>ISP Technician • Kenya</span>
+    <span>Fiber & ISP Technician</span>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" aria-label="Close image">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxTitle"></p>
+  </div>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const nav = document.querySelector('.nav nav');
+    menu.addEventListener('click', () => nav.classList.toggle('open'));
+
+    document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('click', () => {
+        lightboxImg.src = card.dataset.full;
+        lightboxImg.alt = card.dataset.title;
+        lightboxTitle.textContent = card.dataset.title;
+        lightbox.classList.add('show');
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    document.querySelector('.close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    function closeLightbox() {
+      lightbox.classList.remove('show');
+      lightbox.setAttribute('aria-hidden', 'true');
+    }
+  </script>
 </body>
 </html>
